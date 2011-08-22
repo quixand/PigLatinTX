@@ -69,6 +69,7 @@ class piglatinTX  {
 		// however hyphens should be retained as well as punctuations
 	   	if ( preg_match('/^[^a-z]+/i', $word) ) { return $word; }
 
+		// do dictionary lookup if required
 		$this->dictionaryCheck();
 
 		// starting vowel? add "way/-way"
@@ -91,6 +92,20 @@ class piglatinTX  {
 		}
 		Throw new Exception("regex match fail for: ".$word);
 	}
+
+/**
+ * dictionaryCheck, validate word
+ *
+ * @param string $word 
+ * @return bool
+ * @author Nick Fox
+ */
+private function dictionaryCheck($word='')
+{
+	// not implemented yet
+	// grep for word in dictionary list
+	return true;
+}
 
 	/**
 	 * fixPunctuation
