@@ -1,0 +1,46 @@
+<!-- ======================== -->
+<!-- = Pig latin Translator = -->
+<!-- ======================== -->
+
+The general consensus is that there is no official definition of the language and there
+are a few variations in translation.
+
+
+The class should provide the following funtionality:
+
+- convert English -> pig latin
+- there should be a strict language option to only convert recognised English words from the dictionary if desired
+- provide options to convert prefix
+	+ vanilla e.g. following -> ollowingfay
+	+ hyphenated e.g. following -> ollowing-fay
+	+ a random mixture of the above
+- provide options to handle starting syllables:
+	+ add -way
+	+ add -ay
+	+ move syllable and add -hay
+	+ a random mixture of the above
+
+- preserve punctuation
+- preserve capitalisation
+
+-----------------------------
+Rules of translation:
+
+Some strings cannot/should not be translated. for example a phone number or numberic date
+
+
+# ========
+# = Bugs =
+
+- qestionmarks/exclamaition marks are not carried to the end of the word - fixed
+
+
+# ========
+
+Sources
+dictionary: http://en-gb.pyxidium.co.uk/dictionary/mozilla.php
+
+http://en.wikipedia.org/wiki/Pig_Latin
+http://www.piglatin.org/
+http://users.snowcrest.net/donnelly/piglatin.html
+
